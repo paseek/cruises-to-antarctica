@@ -57,6 +57,28 @@
           <p>Волшебный мир айсбергов и&nbsp;пингвинов</p>
         </div>
       </section>
+      <section class="travel">
+        <div class="travel__wrapper container">
+          <div class="travel__text-wrapper">
+            <h2 class="travel__title">Путешествие на&nbsp;край Земли</h2>
+            <p class="travel__description">Это волшебное путешествие поможет вам познакомиться поближе
+              с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где
+              вы&nbsp;сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и&nbsp;многое
+              другое.</p>
+          </div>
+          <div class="travel__img">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/travel/travel-mobil.webp, img/travel/travel-mobil@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/travel/travel-tablet.webp, img/travel/travel-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/travel/travel.webp, img/travel/travel@2x.webp 2x">
+              <img src="img/travel/travel.jpg" width="560" height="301" alt="Изображение пингвинов в Антарктиде"
+                srcset="img/travel/travel@2x.jpg 2x">
+            </picture>
+          </div>
+        </div>
+      </section>
       <!-- <section class="intro">
           <div class="container">
             <h1>Тестовая страница.</h1>
@@ -67,8 +89,54 @@
           </div>
         </section> -->
     </main>
-    <footer>
-      <div class="container"></div>
+    <footer class="footer">
+      <div class="footer__wrapper container">
+        <a class="footer__logo" href="#">
+          <svg width="70" height="38" viewBox="0 0 70 38" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#advantages">Преимущества</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#travels">Направления</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#catalog">Ближайшие круизы</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--ok" href="#" title="Одноклассники">
+              <svg width="12" height="20" viewBox="0 0 12 20" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#ok"></use>
+              </svg>
+              <span class="visually-hidden">Одноклассники</span>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--dzen" href="#" title="Дзен.">
+              <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#dzen"></use>
+              </svg>
+              <span class="visually-hidden">Дзен</span>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--reddit" href="#" title="Reddit.">
+              <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#reddit"></use>
+              </svg>
+              <span class="visually-hidden">Reddit</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </div>
 
