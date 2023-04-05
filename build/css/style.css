@@ -1327,6 +1327,10 @@ button,
   fill: #ffffff;
 }
 
+.header__logo-img.focus-visible:focus {
+  fill: #00b2ff;
+}
+
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1371,6 +1375,10 @@ button,
   padding: 0;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.header__link.focus-visible:focus {
+  color: #00b2ff;
 }
 
 .is-open .header__link {
@@ -1459,14 +1467,15 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  gap: 38px;
 }
 
-.travel__img img {
-  max-width: 560px;
+.travel__img {
+  width: 50%;
 }
 
 .travel__text-wrapper {
-  max-width: 512px;
+  width: 50%;
   padding-top: 55px;
 }
 
@@ -1479,6 +1488,7 @@ button,
 }
 
 .travel__text-wrapper p {
+  width: 95%;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -1672,6 +1682,31 @@ button,
     line-height: 22px;
   }
 
+  .travel {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .travel__wrapper {
+    gap: 30px;
+  }
+
+  .travel__text-wrapper {
+    padding-top: 0;
+    margin-top: -9px;
+  }
+
+  .travel__text-wrapper h2 {
+    width: 85%;
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 16px;
+  }
+
+  .travel__text-wrapper p {
+    width: 100%;
+  }
+
   .footer {
     min-height: 120px;
   }
@@ -1828,6 +1863,35 @@ button,
     line-height: 22px;
   }
 
+  .travel {
+    padding-top: 65px;
+    padding-bottom: 85px;
+  }
+
+  .travel__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .travel__img {
+    width: 100%;
+  }
+
+  .travel__text-wrapper {
+    width: 100%;
+  }
+
+  .travel__text-wrapper h2 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .travel__text-wrapper p {
+    margin-bottom: 13px;
+  }
+
   .footer {
     min-height: 283px;
     padding-top: 40px;
@@ -1953,6 +2017,14 @@ button,
 
   .custom-select__item:hover:not(.focus-visible) {
     background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .header__logo-img:hover:not(.focus-visible) {
+    fill: #00b2ff;
+  }
+
+  .header__link:hover:not(.focus-visible) {
+    color: #00b2ff;
   }
 
   .footer__logo:hover:not(.focus-visible) svg {
