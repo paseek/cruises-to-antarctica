@@ -1,6 +1,5 @@
 import { iosVhFix } from './utils/ios-vh-fix';
 import { initModals } from './modules/modals/init-modals';
-// import { initMobileMenu } from './modules/mobile-menu/mobile-menu';
 import { Form } from './modules/form-validate/form';
 
 // ---------------------------------
@@ -21,8 +20,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
-
-  initMobileMenu();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

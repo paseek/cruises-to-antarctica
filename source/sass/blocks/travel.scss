@@ -1,0 +1,37 @@
+.travel {
+  padding-top: 120px;
+  padding-bottom: 145px;
+}
+
+.travel__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.travel__img {
+  img {
+    max-width: 560px;
+
+    @include vp
+  }
+}
+
+.travel__text-wrapper {
+  max-width: 512px;
+  padding-top: 55px;
+
+  h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+  }
+}
