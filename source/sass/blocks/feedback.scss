@@ -32,7 +32,8 @@
 }
 
 .feedback__content {
-  width: calc(493 / 1008 * 100%);
+  // width: calc(493 / 1008 * 100%);
+  width: calc(493 / 1040 * 100%);
 }
 
 .feedback__content h2 {
@@ -51,7 +52,8 @@
 }
 
 .feedback__form {
-  width: calc(403 / 1008 * 100%);
+  // width: calc(403 / 1008 * 100%);
+  width: calc(403 / 1040 * 100%);
   background-color: $color-tangaroa;
   box-shadow: $shadow-feedback;
   padding-top: 50px;
