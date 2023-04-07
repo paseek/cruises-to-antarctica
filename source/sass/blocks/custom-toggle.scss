@@ -117,8 +117,23 @@
   }
 
   &.is-invalid {
-    label span {
-      color: #ff1553;
+    span {
+      text-decoration: underline dotted #ff1553;
+      // color: #ff1553;
+    }
+
+    span::before {
+      outline: 2px solid #ff1553;
+    }
+  }
+
+  &.is-valid {
+    color: #15ab07;
+
+    span::before {
+      outline: 2px solid #15ab07;
+      // box-sizing: border-box;
+      // border: 2px solid #15ab07;
     }
   }
 

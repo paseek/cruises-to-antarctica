@@ -6,10 +6,10 @@
   // width: 530px;
   // padding: 14px 0 28px;
 
-  @media screen and (max-width: 767px) {
-    padding: 4px 0 48px;
-    width: 100%;
-  }
+  // @media screen and (max-width: 767px) {
+  //   padding: 4px 0 48px;
+  //   width: 100%;
+  // }
 
   label {
     display: flex;
@@ -75,22 +75,22 @@
   &.is-invalid {
     input,
     textarea {
-      border: 2px solid #ff1553;
+      outline: 2px solid #ff1553;
 
       &:focus,
       &:hover {
-        border: 2px solid rgba(#ff1553, 0.5);
+        outline: 2px solid rgba(#ff1553, 0.5);
       }
     }
   }
 
   &.is-valid {
     input {
-      border: 2px solid #22b259;
+      outline: 2px solid #22b259;
 
       &:focus,
       &:hover {
-        border: 2px solid rgba(#22b259, 0.5);
+        outline: 2px solid rgba(#22b259, 0.5);
       }
     }
   }

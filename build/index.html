@@ -369,29 +369,27 @@
           <div class="feedback__content-wrapper">
             <div class="feedback__content">
               <h2>Раннее бронирование</h2>
-              <p>Забронируйте тур за&nbsp;3&#8209;6&nbsp;месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
+              <p>Забронируйте тур за&nbsp;3&#8209;6&nbsp;месяцев <br>до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%
+              </p>
             </div>
             <div class="feedback__form" data-form-validate data-callback="base">
               <form action="https://echo.htmlacademy.ru/" method="post">
                 <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
                 <div class="feedback__field custom-input" data-validate-type="text" data-limitation="name"
-                  data-message-base="Укажите свое имя" data-message-extra="Проверьте корректность заполнения поля"
                   data-required>
                   <label class="visually-hidden" for="name">Имя</label>
                   <input id="name" name="name" type="text" minlength="1" placeholder="Имя" required>
                 </div>
-                <div class="feedback__field custom-input" data-validate-type="phone"
-                  data-message-base="Укажите свой телефон" data-required>
+                <div class="feedback__field custom-input" data-validate-type="phone" data-required>
                   <label class="visually-hidden" for="phone">Телефон</label>
                   <input id="phone" name="phone" type="tel" placeholder="Телефон" required>
                 </div>
-                <div class="feedback__field custom-input" data-validate-type="email"
-                  data-message-base="Укажите свой email" data-required>
+                <div class="feedback__field custom-input" data-validate-type="email" data-required>
                   <label class="visually-hidden" for="phone">Email</label>
                   <input id="email" name="email" type="email" placeholder="Email" required>
                 </div>
                 <label class="feedback__agreed custom-toggle custom-toggle--checkbox" data-validate-type="checkbox"
-                  data-parent-validate="base" data-message-base="Заполните все данные">
+                  data-parent-validate="base">
                   <input id="agreement" name="agreement" type="checkbox" required>
                   <span class="feedback__checkbox">Я&nbsp;согласен на&nbsp;обработку моих персональных данных</span>
                 </label>

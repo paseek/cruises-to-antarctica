@@ -23,17 +23,39 @@
   padding-right: 163px;
   padding-bottom: 50px;
   padding-left: 163px;
+
+  @include vp-1023 {
+    padding-top: 87px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 57px;
+    padding-bottom: 65px;
+  }
 }
 
 .feedback__content-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include vp-1023 {
+    flex-direction: column;
+  }
 }
 
 .feedback__content {
   // width: calc(493 / 1008 * 100%);
   width: calc(493 / 1040 * 100%);
+
+  @include vp-1023 {
+    width: calc(419 / 678 * 100%);
+  }
+
+  @include vp-767 {
+    width: calc(257 / 290 * 100%);
+  }
 }
 
 .feedback__content h2 {
@@ -41,7 +63,19 @@
   font-size: 40px;
   line-height: 60px;
   margin: 0;
-  margin-bottom: 30px;
+  padding-bottom: 8px;
+
+  @include vp-1023 {
+    font-size: 34px;
+    line-height: 51px;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    font-size: 24px;
+    line-height: 31px;
+    padding-bottom: 14px;
+  }
 }
 
 .feedback__content p {
@@ -49,6 +83,19 @@
   font-size: 18px;
   line-height: 27px;
   margin: 0;
+
+  @include vp-1023 {
+    text-align: center;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 22px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .feedback__form {
@@ -56,10 +103,24 @@
   width: calc(403 / 1040 * 100%);
   background-color: $color-tangaroa;
   box-shadow: $shadow-feedback;
-  padding-top: 50px;
+  padding-top: 42px;
   padding-right: 50px;
   padding-bottom: 50px;
   padding-left: 50px;
+
+  @include vp-1023 {
+    width: calc(403 / 678 * 100%);
+    margin-top: 52px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    padding-top: 35px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    margin-top: 34px;
+  }
 }
 
 .feedback__form p {
@@ -68,11 +129,27 @@
   line-height: 27px;
   color: $color-alice-blue;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 27px;
+
+  @include vp-767 {
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 28px;
+  }
 }
 
 .feedback__field:not(:last-child) {
   padding-bottom: 20px;
+}
+
+// .feedback__field:last-child {
+//   padding-bottom: 0;
+// }
+
+.feedback__field:has(+ :not(.feedback__field)) {
+  @include vp-767 {
+    padding-bottom: 15px;
+  }
 }
 
 .feedback__form input {
@@ -80,17 +157,16 @@
   color: $color-tangaroa;
   background-color: $color-alice-blue;
   border: none;
-  border-radius: 3px;
-  padding-top: 15px;
-  padding-bottom: 17px;
+  padding-top: 14px;
+  padding-bottom: 13px;
   padding-left: 15px;
   outline: none;
 
   &::placeholder {
     font-family: $ff-basic;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 14px;
+    line-height: 21px;
     color: $color-placeholder;
   }
 }
@@ -105,9 +181,13 @@
   color: $color-tangaroa;
   border: none;
   padding: 0;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   margin-top: 30px;
+
+  @include vp-767 {
+    margin-top: 26px;
+  }
 
   @include hover-focus {
     background-color: $color-deep-sky-blue;
@@ -125,8 +205,9 @@
   padding-left: 23px;
   cursor: pointer;
 
-  @include vp-1023 {
-    padding-left: 25px;
+  @include vp-767 {
+    line-height: 12px;
+    padding-left: 28px;
   }
 
   &::before {
@@ -142,6 +223,11 @@
 
     @include vp-1023 {
       left: 0;
+    }
+
+    @include vp-767 {
+      width: 20px;
+      height: 20px;
     }
   }
 }
@@ -168,7 +254,7 @@
 
 .feedback__form [type="checkbox"]:focus + .feedback__checkbox {
   outline: 2px solid $color-deep-sky-blue;
-  // outline-offset: 2px;
+  outline-offset: 2px;
 }
 
 .feedback__form input[type="checkbox"]:checked + .feedback__checkbox::after {
@@ -200,6 +286,7 @@
 .feedback__form textarea:focus {
   background: $color-default-white;
   outline: 2px solid $color-deep-sky-blue;
+  outline-offset: 2px;
 }
 
 .feedback__form input:-webkit-autofill,
@@ -211,7 +298,7 @@
 .feedback__form select:-webkit-autofill,
 .feedback__form select:-webkit-autofill:hover,
 .feedback__form select:-webkit-autofill:focus {
-  -webkit-text-fill-color: $color-default-white;
-  -webkit-box-shadow: 0 0 0 40rem red inset;
-  outline: 2px solid $color-default-white;
+  -webkit-text-fill-color: $color-placeholder;
+  -webkit-box-shadow: 0 0 0 40rem $color-alice-blue inset;
+  outline: 2px solid $color-deep-sky-blue;
 }

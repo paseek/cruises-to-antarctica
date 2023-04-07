@@ -1,6 +1,6 @@
-import {Validator} from './validator';
-import {callbacks} from './callback';
-import {initPhoneInput} from './init-phone-input';
+import { Validator } from './validator';
+import { callbacks } from './callback';
+import { initPhoneInput } from './init-phone-input';
 
 export class Form {
   constructor() {
@@ -59,7 +59,9 @@ export class Form {
   }
 
   _onFormSubmit(event, callback = null) {
-    if (this.validateForm(event.target) && callback) {
+    // if (this.validateForm(event.target) && callback) {
+    const result = this.validateForm(event.target);
+    if (result === true && callback) {
       this._callbacks[callback].successCallback(event);
       if (this._callbacks[callback].reset) {
         setTimeout(() => {
@@ -71,6 +73,9 @@ export class Form {
     if (!this.validateForm(event.target) && callback) {
       this._callbacks[callback].errorCallback(event);
       return;
+    }
+    if (result === true) {
+      event.target.submit();
     }
   }
 
