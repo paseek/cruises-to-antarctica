@@ -71,7 +71,6 @@
 }
 
 .advantages__item {
-  // max-height: 241px;
   background: $color-alice-blue;
   padding-top: 30px;
   padding-right: 30px;
@@ -80,7 +79,6 @@
   overflow-y: scroll;
 
   @include vp-1023 {
-    // max-height: 310px;
     padding-top: 26px;
     padding-right: 20px;
     padding-bottom: 21px;

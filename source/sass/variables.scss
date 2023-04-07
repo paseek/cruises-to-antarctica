@@ -21,6 +21,8 @@ $color-denim:                       #1566c4;
 $color-deep-sky-blue:               #00b2ff;
 $color-pattens-blue:                #cfe4fb;
 $color-jordy-blue:                  #73b2df;
+$color-sapphire:                    #101a56;
+$color-placeholder:               rgba(1, 28, 64, 0.7);
 
 // Gradient
 
@@ -30,6 +32,7 @@ $bg-card:                           linear-gradient(180deg, rgba(1, 28, 64, 0) 5
 // Shadows
 
 $shadow-dark:                       0 4px 4px rgba(0, 0, 0, 0.25);
+$shadow-feedback:                   0 4px 45px rgba(1, 28, 64, 0.15);
 
 // Typography
 // ---------------------------------

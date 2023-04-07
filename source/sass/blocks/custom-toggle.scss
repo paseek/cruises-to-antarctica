@@ -1,25 +1,25 @@
 .custom-toggle {
   position: relative;
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 300;
+  // font-size: 18px;
+  // line-height: 27px;
+  // font-weight: 300;
 
-  display: flex;
-  width: 500px;
-  padding: 14px 0 10px 36px;
+  // display: flex;
+  // width: 500px;
+  // padding: 14px 0 10px 36px;
 
-  @media screen and (max-width: 767px) {
-    padding: 14px 0 10px 0;
-    width: 100%;
-  }
+  // @media screen and (max-width: 767px) {
+  //   padding: 14px 0 10px 0;
+  //   width: 100%;
+  // }
 
-  &:last-of-type {
-    padding: 14px 0 58px 36px;
+  // &:last-of-type {
+  //   padding: 14px 0 58px 36px;
 
-    @media screen and (max-width: 767px) {
-      padding: 14px 0 58px 0;
-    }
-  }
+  //   @media screen and (max-width: 767px) {
+  //     padding: 14px 0 58px 0;
+  //   }
+  // }
 
   input {
     position: absolute;

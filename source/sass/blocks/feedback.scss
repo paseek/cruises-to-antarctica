@@ -1,0 +1,215 @@
+.feedback {
+  position: relative;
+  background-color: $color-solitude;
+  z-index: 0;
+}
+
+.feedback__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+  z-index: -1;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.feedback__wrapper {
+  padding-top: 50px;
+  padding-right: 163px;
+  padding-bottom: 50px;
+  padding-left: 163px;
+}
+
+.feedback__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feedback__content {
+  width: calc(493 / 1008 * 100%);
+}
+
+.feedback__content h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.feedback__content p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+}
+
+.feedback__form {
+  width: calc(403 / 1008 * 100%);
+  background-color: $color-tangaroa;
+  box-shadow: $shadow-feedback;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+
+.feedback__form p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-alice-blue;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.feedback__field:not(:last-child) {
+  padding-bottom: 20px;
+}
+
+.feedback__form input {
+  width: 100%;
+  color: $color-tangaroa;
+  background-color: $color-alice-blue;
+  border: none;
+  border-radius: 3px;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  padding-left: 15px;
+  outline: none;
+
+  &::placeholder {
+    font-family: $ff-basic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-placeholder;
+  }
+}
+
+.feedback__form button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-tangaroa;
+  border: none;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 30px;
+
+  @include hover-focus {
+    background-color: $color-deep-sky-blue;
+  }
+}
+
+.feedback__checkbox {
+  width: 100%;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  color: $color-alice-blue;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  padding-left: 23px;
+  cursor: pointer;
+
+  @include vp-1023 {
+    padding-left: 25px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: $color-alice-blue;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    @include vp-1023 {
+      left: 0;
+    }
+  }
+}
+
+.feedback__agreed {
+  display: flex;
+  // order: 1;
+  // align-self: end;
+
+  // @include vp-1023 {
+  //   margin-bottom: 4px;
+  // }
+
+  // @include vp-767 {
+  //   margin-top: 4px;
+  //   margin-bottom: 0;
+  //   margin-left: 5px;
+  // }
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}
+
+.feedback__form [type="checkbox"]:focus + .feedback__checkbox {
+  outline: 2px solid $color-deep-sky-blue;
+  // outline-offset: 2px;
+}
+
+.feedback__form input[type="checkbox"]:checked + .feedback__checkbox::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 2px;
+  left: 4px;
+  margin: auto;
+  width: 10px;
+  height: 6px;
+  border-radius: 1px;
+  border-left: 1px solid $color-sapphire;
+  border-bottom: 1px solid $color-sapphire;
+  transform: rotate(-45deg);
+
+  @include vp-1023 {
+    left: 4px;
+  }
+
+  @include vp-767 {
+    bottom: 1px;
+  }
+}
+
+.feedback__form input:hover,
+.feedback__form textarea:hover,
+.feedback__form input:focus,
+.feedback__form textarea:focus {
+  background: $color-default-white;
+  outline: 2px solid $color-deep-sky-blue;
+}
+
+.feedback__form input:-webkit-autofill,
+.feedback__form input:-webkit-autofill:hover,
+.feedback__form input:-webkit-autofill:focus,
+.feedback__form textarea:-webkit-autofill,
+.feedback__form textarea:-webkit-autofill:hover,
+.feedback__form textarea:-webkit-autofill:focus,
+.feedback__form select:-webkit-autofill,
+.feedback__form select:-webkit-autofill:hover,
+.feedback__form select:-webkit-autofill:focus {
+  -webkit-text-fill-color: $color-default-white;
+  -webkit-box-shadow: 0 0 0 40rem red inset;
+  outline: 2px solid $color-default-white;
+}
