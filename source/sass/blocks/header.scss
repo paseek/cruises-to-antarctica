@@ -1,33 +1,56 @@
-.is-open.header::before {
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.is-open .header::before {
   @include vp-767 {
     position: absolute;
     content: "";
     width: 100%;
     height: 100vh;
     overflow-y: scroll;
-    z-index: 1;
     background: rgba(0, 43, 102, 0.5);
   }
 }
 
 .header__wrapper {
-  position: absolute;
-  width: 100%;
+  // position: absolute;
+  // width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  top: 35px;
-  right: 0;
-  left: 0;
-  z-index: 1;
+  // top: 35px;
+  // right: 0;
+  // left: 0;
+  // z-index: 1;
+  // padding-top: 35px;
+  // padding-bottom: 35px;
+
+  // @include vp-1023 {
+  //   padding-top: 30px;
+  //   padding-bottom: 30px;
+  // }
+
+  // @include vp-767 {
+  //   padding-top: 19px;
+  //   padding-bottom: 19px;
+  // }
+}
+
+.header__logo {
+  padding-top: 35px;
+  padding-bottom: 35px;
 
   @include vp-1023 {
-    top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   @include vp-767 {
-    top: 0;
     padding-top: 19px;
+    padding-bottom: 19px;
   }
 }
 
@@ -93,7 +116,8 @@
     gap: 10px;
     padding-top: 77px;
     padding-bottom: 0;
-    padding-left: 15px;
+    // padding-left: 15px;
+    margin-left: 15px;
   }
 }
 
@@ -153,20 +177,21 @@
   @include vp-767 {
     position: relative;
     display: flex;
-    width: 24px;
-    height: 12px;
-    margin-left: auto;
-    padding: 15px 0;
+    width: 46px;
+    height: 60px;
     background-color: $color-transparent;
     border: 0;
     transition: $trans-modal;
     transform: translate(7px, 0);
     cursor: pointer;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    margin-left: auto;
 
     &::before {
       content: "";
       position: absolute;
-      top: 5px;
+      top: 20px;
       right: 7px;
       width: 24px;
       height: 2px;

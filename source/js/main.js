@@ -2,22 +2,29 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initMap} from './modules/map/map';
+import {Burger} from './utils/burger';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
 
-  const pageHeader = document.querySelector('[data-page-header]');
-  const navToggle = document.querySelector('[data-menu-toggle]');
+  // const pageHeader = document.querySelector('[data-page-header]');
+  // const navToggle = document.querySelector('[data-menu-toggle]');
 
-  navToggle.addEventListener('click', function () {
-    pageHeader.classList.toggle('is-open');
-    document.body.classList.toggle('scroll-lock');
-  });
+  // navToggle.addEventListener('click', function () {
+  //   pageHeader.classList.toggle('is-open');
+  //   if (pageHeader.classList.contains('is-open')) {
+  //     document.body.classList.add('scroll-lock');
+  //   }
+  //   else {document.body.classList.revome('scroll-lock');}
+  // });
 
   // Utils
   // ---------------------------------
 
   iosVhFix();
+
+  const burger = new Burger();
+  burger.init();
 
   initMap({
     id: 'map',

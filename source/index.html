@@ -19,8 +19,8 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <header class="header" data-page-header>
+  <div class="wrapper" data-header>
+    <header class="header">
       <div class="header__wrapper container">
         <a href="/" class="header__logo">
           <svg class="header__logo-img" width="70" height="38" xmlns="http://www.w3.org/2000/svg">
@@ -29,13 +29,12 @@
         </a>
         <nav class="header__nav">
           <ul class="header__list">
-            <li class="header__item"><a href="#advantages" class="header__link">Преимущества</a></li>
-            <li class="header__item"><a href="#travel" class="header__link">Направления</a></li>
-            <li class="header__item"><a href="#catalog" class="header__link">Ближайшие круизы</a></li>
-            <li class="header__item"><a href="#contacts" class="header__link">Контакты</a></li>
+            <li class="header__item"><a href="#advantages" class="header__link" data-close-menu>Преимущества</a></li>
+            <li class="header__item"><a href="#travel" class="header__link" data-close-menu>Направления</a></li>
+            <li class="header__item"><a href="#catalog" class="header__link" data-close-menu>Ближайшие круизы</a></li>
+            <li class="header__item"><a href="#contacts" class="header__link" data-close-menu>Контакты</a></li>
           </ul>
-          <button class="header__button" type="button" aria-label="Переключатель отображения меню" aria-pressed="false"
-            data-menu-toggle>
+          <button class="header__button" type="button" aria-label="Переключатель меню" aria-pressed="false" data-burger>
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </nav>
