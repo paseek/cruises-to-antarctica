@@ -1475,7 +1475,6 @@ button,
 
 .travel__img img {
   width: 100%;
-  height: 100%;
 }
 
 .travel__text-wrapper {
@@ -1505,7 +1504,7 @@ button,
   z-index: 0;
 }
 
-.agvantages__image {
+.advantages__image {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1516,7 +1515,7 @@ button,
   z-index: -1;
 }
 
-.agvantages__image img {
+.advantages__image img {
   width: 100%;
   height: 100%;
 }
@@ -1969,6 +1968,75 @@ button,
   outline: 2px solid #00b2ff;
 }
 
+.contacts__wrappep {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.contacts__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.contacts__map {
+  width: 48.275862069%;
+  height: 306px;
+}
+
+.contacts__text {
+  width: 43.1034482759%;
+  padding-top: 76px;
+}
+
+.contacts__text h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.contacts__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 21px;
+}
+
+.contacts__item svg {
+  margin-right: 10px;
+}
+
+.contacts__item address,
+.contacts__item a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.contacts__item address.focus-visible:focus,
+.contacts__item a.focus-visible:focus {
+  color: #00b2ff;
+}
+
+.contacts__item address {
+  display: inline;
+}
+
 .footer {
   width: 100%;
   min-height: 138px;
@@ -2285,6 +2353,29 @@ button,
     left: 4px;
   }
 
+  .contacts__wrappep {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .contacts__map {
+    width: 47.7876106195%;
+    height: 335px;
+  }
+
+  .contacts__text {
+    width: 47.7876106195%;
+    padding-top: 66px;
+  }
+
+  .contacts__text h3 {
+    margin-bottom: 27px;
+  }
+
+  .contacts__item address {
+    width: 80%;
+  }
+
   .footer {
     min-height: 120px;
   }
@@ -2598,6 +2689,34 @@ button,
     bottom: 1px;
   }
 
+  .contacts__wrappep {
+    padding-top: 58px;
+    padding-bottom: 61px;
+  }
+
+  .contacts__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .contacts__map {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .contacts__text {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .contacts__item address {
+    width: 90%;
+  }
+
   .footer {
     min-height: 283px;
     padding-top: 40px;
@@ -2732,6 +2851,11 @@ button,
 
   .feedback__agreed:hover:not(.focus-visible) {
     opacity: 0.8;
+  }
+
+  .contacts__item address:hover:not(.focus-visible),
+  .contacts__item a:hover:not(.focus-visible) {
+    color: #00b2ff;
   }
 
   .footer__logo:hover:not(.focus-visible) svg {

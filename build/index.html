@@ -30,7 +30,7 @@
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item"><a href="#advantages" class="header__link">Преимущества</a></li>
-            <li class="header__item"><a href="#travels" class="header__link">Направления</a></li>
+            <li class="header__item"><a href="#travel" class="header__link">Направления</a></li>
             <li class="header__item"><a href="#catalog" class="header__link">Ближайшие круизы</a></li>
             <li class="header__item"><a href="#contacts" class="header__link">Контакты</a></li>
           </ul>
@@ -49,7 +49,7 @@
           <source type="image/webp" media="(max-width: 1023px)"
             srcset="img/hero/bg-hero-tablet.webp, img/hero/bg-hero-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/hero/bg-hero.webp, img/hero/bg-hero@2x.webp 2x">
-          <img src="img/hero/bg-hero.jpg" width="1366" height="650" alt="Волшебный мир айсбергов и пингвинов."
+          <img src="img/hero/bg-hero.jpg" width="1366" height="650" alt="Айсберги и пингвины"
             srcset="img/hero/bg-hero@2x.jpg 2x">
         </picture>
         <div class="hero__wrapper container">
@@ -57,7 +57,7 @@
           <p>Волшебный мир айсбергов и&nbsp;пингвинов</p>
         </div>
       </section>
-      <section class="travel">
+      <section class="travel" id="travel">
         <div class="travel__wrapper container">
           <div class="travel__text-wrapper">
             <h2 class="travel__title">Путешествие на&nbsp;край Земли</h2>
@@ -74,13 +74,13 @@
                 srcset="img/travel/travel-tablet.webp, img/travel/travel-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/travel/travel.webp, img/travel/travel@2x.webp 2x">
               <img src="img/travel/travel.jpg" srcset="img/travel/travel@2x.jpg 2x" width="260" height="301"
-                alt="Изображение пингвинов в Антарктиде" loading="lazy">
+                alt="Пингвины в Антарктиде" loading="lazy">
             </picture>
           </div>
         </div>
       </section>
-      <section class="advantages">
-        <div class="agvantages__image">
+      <section class="advantages" id="advantages">
+        <div class="advantages__image">
           <picture>
             <source type="image/webp" media="(max-width: 767px)"
               srcset="img/advantages/advantages-mobile.webp 1x, img/advantages/advantages-mobile@2x.webp 2x">
@@ -89,7 +89,7 @@
             <source type="image/webp" media="(min-width: 1024px)"
               srcset="img/advantages/advantages.webp 1x, img/advantages/advantages@2x.webp 2x">
             <img src="img/advantages/advantages.jpg" srcset="img/advantages/advantages@2x.jpg 2x" width="1366"
-              height="562" alt="Антарктида" loading="lazy">
+              height="562" alt="Берег антарктиды" loading="lazy">
           </picture>
         </div>
         <div class="advantages__wrapper container">
@@ -122,7 +122,7 @@
           </ul>
         </div>
       </section>
-      <section class="catalog">
+      <section class="catalog" id="catalog">
         <div class="catalog__wrapper container">
           <h2>Ближайшие круизы</h2>
           <ul class="catalog__list">
@@ -361,7 +361,7 @@
             <source type="image/webp" media="(max-width: 1023px)"
               srcset="img/feedback/feedback-tablet.webp, img/feedback/feedback-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/feedback/feedback.webp, img/feedback/feedback@2x.webp 2x">
-            <img src="img/feedback/feedback.jpg" width="1366" height="555" alt="Живописный берег в Антарктиде"
+            <img src="img/feedback/feedback.jpg" width="1366" height="555" alt="Живописный берег Антарктиды"
               srcset="img/feedback/feedback@2x.jpg 2x">
           </picture>
         </div>
@@ -395,6 +395,47 @@
                 </label>
                 <button type="submit">Оставить заявку</button>
               </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts" id="contacts">
+        <h2 class="visually-hidden">Карта с адресом офиса</h2>
+        <div class="contacts__wrappep container">
+          <div class="contacts__content">
+            <div class="contacts__map" id="map" data-map>
+              <div class="contacts__map-image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/contacts/map-mobile.webp, img/contacts/map-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/contacts/map-tablet.webp, img/contacts/map-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/contacts/map.webp, img/contacts/map@2x.webp 2x">
+                  <img src="img/contacts/map.jpg" width="560" height="306"
+                    alt="Адрес компании - Санкт Петербург, ул. Большая Конюшенная, 19/8." srcset="img/mapg@2x.jpg 2x">
+                </picture>
+              </div>
+            </div>
+            <div class="contacts__text">
+              <h3>У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все
+                расскажем.</h3>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <svg width="18" height="22" viewBox="0 0 18 22" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite.svg#pin"></use>
+                  </svg>
+                  <address>
+                    <a href="https://yandex.ru/maps/-/CCU0mXSJsB">г. Санкт Петербург, ул.&nbsp;Большая Конюшенная,
+                      19/8</a>
+                  </address>
+                </li>
+                <li class="contacts__item">
+                  <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite.svg#phone"></use>
+                  </svg>
+                  <a href="tel:+78002000000">8-800-200-00-00</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -488,9 +529,9 @@
       </div>
     </div>
   </div>
-
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
+
 </body>
 
 </html>

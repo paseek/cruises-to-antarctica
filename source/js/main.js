@@ -1,7 +1,7 @@
-import { iosVhFix } from './utils/ios-vh-fix';
-import { initModals } from './modules/modals/init-modals';
-import { Form } from './modules/form-validate/form';
-
+import {iosVhFix} from './utils/ios-vh-fix';
+import {initModals} from './modules/modals/init-modals';
+import {Form} from './modules/form-validate/form';
+import {initMap} from './modules/map/map';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -17,6 +17,26 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+
+  initMap({
+    id: 'map',
+    initials: {
+      center: [59.93868425386648, 30.3230366711649],
+      zoom: 15,
+    },
+    placemark: [
+      {
+        hintContent: 'г. Санкт Петербург, ул. Большая Конюшенная, 19/8',
+      },
+      {
+        iconImageHref: 'img/svg/pin.svg',
+        iconImageSize: [18, 22],
+        iconImageOffset: [-9, -22],
+        iconLayout: 'default#image',
+        iconShadow: false,
+      }
+    ],
+  });
 
   // Modules
   // ---------------------------------
