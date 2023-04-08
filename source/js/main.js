@@ -11,6 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   navToggle.addEventListener('click', function () {
     pageHeader.classList.toggle('is-open');
+    document.body.classList.toggle('scroll-lock');
   });
 
   // Utils

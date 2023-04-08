@@ -47,4 +47,4 @@ function closeMenu() {
   }
 }
 
-export { initMobileMenu };
+export {initMobileMenu};
