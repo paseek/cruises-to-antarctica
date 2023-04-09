@@ -1,13 +1,13 @@
 let apiLoaded = false;
-const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+// const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
 const createMap = ({id, initials, placemark}) => {
   const map = new window.ymaps.Map(id, initials);
   map.geoObjects.add(new window.ymaps.Placemark(map.getCenter(), ...placemark));
   map.behaviors.disable('scrollZoom');
-  if (isMobile) {
-    map.behaviors.disable('drag');
-  }
+  // if (isMobile) {
+  //   map.behaviors.disable('drag');
+  // }
 };
 
 const initMap = (mapData) => {

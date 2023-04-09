@@ -10,7 +10,6 @@
     content: "";
     width: 100%;
     height: 100vh;
-    overflow-y: scroll;
     background: rgba(0, 43, 102, 0.5);
   }
 }
@@ -106,13 +105,14 @@
   width: 89%;
   height: 100vh;
   background-color: $color-alice-blue;
+  padding-right: 7px;
+  overflow-y: scroll;
 }
 
 .is-open .header__list {
   @include vp-767 {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 10px;
     padding-top: 77px;
     padding-bottom: 0;
@@ -177,7 +177,7 @@
   @include vp-767 {
     position: relative;
     display: flex;
-    width: 46px;
+    width: 38px;
     height: 60px;
     background-color: $color-transparent;
     border: 0;
@@ -205,8 +205,8 @@
 .is-open .header__button::before {
   content: "";
   position: absolute;
-  top: 31px;
-  right: 18px;
+  top: 32px;
+  right: 11px;
   width: 19px;
   height: 2px;
   background-color: $color-tangaroa;
