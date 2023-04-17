@@ -1874,6 +1874,7 @@ button,
   padding-top: 11px;
   padding-bottom: 11px;
   margin-top: 30px;
+  cursor: pointer;
 }
 
 .feedback__form button.focus-visible:focus {
