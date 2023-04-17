@@ -1351,17 +1351,6 @@ button,
   margin: 0;
 }
 
-.is-open .header__nav {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 89%;
-  height: 100vh;
-  background-color: #f9fbfd;
-  padding-right: 7px;
-  overflow-y: scroll;
-}
-
 .header__item {
   font-weight: 500;
   font-size: 16px;
@@ -1385,10 +1374,6 @@ button,
 
 .header__link.focus-visible:focus {
   color: #00b2ff;
-}
-
-.is-open .header__link {
-  color: #011c40;
 }
 
 .header__button {
@@ -1437,8 +1422,7 @@ button,
 .hero__wrapper {
   position: absolute;
   top: 41%;
-  left: 6%;
-  margin-left: 13px;
+  margin-left: 95px;
 }
 
 .hero__wrapper h1 {
@@ -2216,7 +2200,6 @@ button,
   }
 
   .hero__wrapper {
-    left: 0;
     margin-left: 0;
   }
 
@@ -2467,13 +2450,24 @@ button,
   .is-open .header__logo-img {
     position: absolute;
     top: 22px;
-    left: 51px;
+    right: 227px;
     fill: #011c40;
     z-index: 1;
   }
 
   .header__list {
     display: none;
+  }
+
+  .is-open .header__nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 284px;
+    height: 100vh;
+    background-color: #f9fbfd;
+    padding-right: 7px;
+    overflow-y: scroll;
   }
 
   .is-open .header__list {
@@ -2496,6 +2490,10 @@ button,
     padding-top: 10px;
     padding-bottom: 8px;
     padding-left: 10px;
+  }
+
+  .is-open .header__link {
+    color: #011c40;
   }
 
   .header__button {
@@ -2542,7 +2540,7 @@ button,
   }
 
   .hero__wrapper p {
-    width: 80%;
+    width: 75%;
     font-size: 16px;
     line-height: 22px;
   }
