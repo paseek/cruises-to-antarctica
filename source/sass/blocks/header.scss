@@ -16,6 +16,7 @@
 
 .header__wrapper {
   display: flex;
+  gap: 50px;
   justify-content: space-between;
   align-items: center;
 }
@@ -70,6 +71,7 @@
 
 .header__list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
   padding-bottom: 4px;

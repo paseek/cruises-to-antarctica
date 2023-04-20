@@ -123,11 +123,16 @@
   list-style-type: none;
   margin: 0;
   display: flex;
+  gap: 28px;
   flex-wrap: wrap;
   justify-content: flex-end;
   min-width: 160px;
   max-width: 20%;
   padding-left: 0;
+
+  @include vp-1023 {
+    gap: 22px;
+  }
 
   @include vp-767 {
     justify-content: flex-start;
@@ -140,13 +145,13 @@
   display: flex;
   line-height: 0;
 
-  &:not(:first-child) {
-    margin-left: 28px;
+  // &:not(:first-child) {
+  //   margin-left: 28px;
 
-    @include vp-1023 {
-      margin-left: 22px;
-    }
-  }
+  //   @include vp-1023 {
+  //     margin-left: 22px;
+  //   }
+  // }
 }
 
 .footer__social-link {

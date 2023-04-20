@@ -100,6 +100,7 @@
 
 .feedback__form {
   // width: calc(403 / 1008 * 100%);
+  min-width: 350px;
   width: calc(403 / 1040 * 100%);
   background-color: $color-tangaroa;
   box-shadow: $shadow-feedback;
@@ -114,6 +115,7 @@
   }
 
   @include vp-767 {
+    min-width: 100%;
     width: 100%;
     padding-top: 35px;
     padding-right: 30px;
@@ -179,6 +181,8 @@
   font-size: 14px;
   line-height: 21px;
   color: $color-tangaroa;
+  background: $color-alice-blue;
+  background-color: $color-alice-blue;
   border: none;
   padding: 0;
   padding-top: 11px;

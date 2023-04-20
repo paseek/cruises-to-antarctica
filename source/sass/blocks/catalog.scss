@@ -35,7 +35,8 @@
 
 .catalog__list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  // grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   column-gap: calc(30 / 1130 * 100%);
   row-gap: 30px;
   list-style-type: none;
@@ -54,7 +55,8 @@
 }
 
 .catalog__item {
-  aspect-ratio: 260/386;
+  min-height: 386px;
+  // aspect-ratio: 260/386;
 
   @include vp-1023 {
     aspect-ratio: 309/386;
@@ -88,6 +90,7 @@
   position: absolute;
   bottom: 22px;
   left: 30px;
+  right: 30px;
 
   @include vp-1023 {
     bottom: 26px;
@@ -126,6 +129,12 @@
   padding-bottom: 35px;
   padding-left: 25px;
 
+  @include vp-1279 {
+    padding-right: 10px;
+    padding-left: 15px;
+
+  }
+
   @include vp-1023 {
     padding-bottom: 35px;
     padding-left: 35px;
@@ -144,7 +153,9 @@
   }
 
   dl {
-    margin: 0 0 10px;
+    // margin: 0 0 10px;
+    height: 230px;
+    margin: 0 0 5px;
     overflow-y: auto;
   }
 
