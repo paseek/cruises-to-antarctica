@@ -2508,7 +2508,6 @@ button,
     height: 100vh;
     background-color: #f9fbfd;
     padding-right: 7px;
-    overflow-y: scroll;
   }
 
   .is-open .header__list {
@@ -2520,8 +2519,11 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 10px;
-    padding-top: 77px;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    overflow-y: scroll;
     padding-bottom: 0;
+    margin-top: 77px;
     margin-left: 15px;
   }
 
