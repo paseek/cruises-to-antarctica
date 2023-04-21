@@ -1416,9 +1416,6 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   position: relative;
   min-height: 650px;
   background-color: #011c40;
@@ -1444,7 +1441,7 @@ button,
 
 .hero__wrapper {
   position: relative;
-  padding-top: 100px;
+  padding-top: 275px;
   padding-bottom: 100px;
   margin-top: -10px;
   margin-left: 95px;
@@ -1635,7 +1632,7 @@ button,
 }
 
 .catalog__item {
-  min-height: 386px;
+  aspect-ratio: 260/386;
 }
 
 .catalog__item.focus-visible:focus .catalog__card-content {
@@ -2207,6 +2204,11 @@ button,
     padding-right: 10px;
     padding-left: 15px;
   }
+
+  .catalog__card-content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -2340,6 +2342,11 @@ button,
   .catalog__card-content {
     padding-bottom: 35px;
     padding-left: 35px;
+  }
+
+  .catalog__card-content p {
+    font-size: 18px;
+    line-height: 27px;
   }
 
   .catalog__card-content button {
@@ -2576,6 +2583,10 @@ button,
     min-height: 500px;
   }
 
+  .hero__wrapper {
+    padding-top: 180px;
+  }
+
   .hero__wrapper h1 {
     font-weight: 700;
     font-size: 36px;
@@ -2759,6 +2770,13 @@ button,
   .contacts__text {
     width: 100%;
     padding-top: 0;
+  }
+
+  .contacts__item-pin svg {
+    -ms-flex-item-align: start;
+    -ms-grid-row-align: start;
+    align-self: start;
+    margin-top: 4px;
   }
 
   .contacts__item address {

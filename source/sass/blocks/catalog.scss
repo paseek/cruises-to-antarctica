@@ -55,8 +55,8 @@
 }
 
 .catalog__item {
-  min-height: 386px;
-  // aspect-ratio: 260/386;
+  // min-height: 386px;
+  aspect-ratio: 260/386;
 
   @include vp-1023 {
     aspect-ratio: 309/386;
@@ -149,6 +149,16 @@
     line-height: 27px;
     color: $color-alice-blue;
     margin: 0 0 14px;
+
+    @include vp-1279 {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    @include vp-1023 {
+      font-size: 18px;
+      line-height: 27px;
+    }
   }
 
   dl {

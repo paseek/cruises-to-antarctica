@@ -80,6 +80,14 @@
   margin-right: 10px;
 }
 
+.contacts__item-pin svg {
+  @include vp-767 {
+    align-self: start;
+    margin-top: 4px;
+  }
+}
+
+
 .contacts__item address,
 .contacts__item a {
   font-style: normal;
